@@ -1,0 +1,58 @@
+﻿<!doctype>
+<html>
+<head>
+  <title>Some Website</title>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#468994">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+  function List(){
+    $('.navigate-menu').fadeToggle();
+	document.getElementById('list').style =('background: url(list_then.png);');
+    }
+  </script>
+  <link href="Style/Style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="content">
+      <span onclick="List()" name="logo" id="logo">S</span>
+	  <span name="logo" id="logo">O</span>
+	  <span name="logo" id="logo">M</span>
+	  <span name="logo" id="logo">E</span>
+	  <span name="logo" id="logo">S</span>
+	  <span name="logo" id="logo">I</span>
+	  <span name="logo" id="logo">T</span>
+	  <span name="logo" id="logo">E</span> 
+	  <div onclick="$('.navigate-menu').fadeToggle(1000);" class="list" id="list">
+	  </div>
+	  <ul id="navigate-menu" class="navigate-menu">
+	    <li><a id="nav_a1" href="" onmouseout="$('#nav_a1').css({'color':'black'})" onmouseover="$('#nav_a1').css({'color':'red'})">О нас</a></li>
+		<li><a id="nav_a2" href="" onmouseout="$('#nav_a2').css({'color':'black'})" onmouseover="$('#nav_a2').css({'color':'red'})">Блог</a></li>
+		<li><a id="nav_a3" href="" onmouseout="$('#nav_a3').css({'color':'black'})" onmouseover="$('#nav_a3').css({'color':'red'})">Не блог</a></li>
+	  </ul>
+	</div>
+  </header>
+  <div class="cool">
+    <h1>&laquo;Ты видел слишком мало, пора отркыть глаза!&raquo;</h1>
+  </div>
+  <div class="inspiration">
+    <div class="world">
+	  <h1 style="padding-top: 30px;"><a href="https://www.google.com.ua/maps" class="go">Путешествовать!</a></h1>
+    </div>	
+  </div>
+  <footer>
+    <div class="container">
+      <div class="in_container">
+	    <h2 style="text-align: left;"><a id="foo_a1" href="" onmouseout="$('#foo_a1').css({'color':'white'})" onmouseover="$('#foo_a1').css({'color':'red'})">Связаться с нами</a></h2>
+	  </div>
+	  <div class="in_container">
+	    <h2 style="text-align: center;"><a id="foo_a2" href="" onmouseout="$('#foo_a2').css({'color':'white'})" onmouseover="$('#foo_a2').css({'color':'red'})">2017</a></h2>
+	  </div>
+	  <div class="in_container">
+	    <h2 style="text-align: right;"><a id="foo_a3" href="https://vk.com/ivanpisckun" onmouseout="$('#foo_a3').css({'color':'white'})" onmouseover="$('#foo_a3').css({'color':'red'})">Разработчик</a></h2>
+	  </div>
+  </footer>
+</body>
+</html>
